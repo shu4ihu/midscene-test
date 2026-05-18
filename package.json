@@ -1,0 +1,21 @@
+{
+  "name": "midscene-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node demo.js",
+    "testcases:dry-run": "node scripts/run-testcases.js --dry-run",
+    "testcases:run": "node scripts/run-testcases.js --current-tab",
+    "testcases:case": "node scripts/run-testcases.js --current-tab --case"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@midscene/web": "^1.8.1",
+    "dotenv": "^17.4.2"
+  }
+}

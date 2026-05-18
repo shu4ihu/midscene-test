@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midscene 测试执行汇总 20260518-181612</title>
+<style>
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #1f2937; }
+main { max-width: 1320px; margin: 0 auto; padding: 32px 20px 48px; }
+h1 { margin: 0 0 8px; font-size: 28px; }
+h2 { margin-top: 32px; font-size: 20px; }
+h3 { margin: 0; font-size: 18px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.card, .case-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.stat { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; }
+.stat b { display: block; font-size: 24px; margin-top: 6px; }
+.meta { display: grid; grid-template-columns: 180px 1fr; gap: 8px 16px; }
+.case-list { display: grid; gap: 16px; }
+.case-header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; flex-wrap: wrap; border-bottom: 1px solid #e5e7eb; padding-bottom: 14px; margin-bottom: 14px; }
+.case-title { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.case-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.step-list { display: grid; gap: 12px; margin-top: 12px; }
+.step-card { border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; background: #f9fafb; }
+.step-head { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.step-title { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px 14px; margin: 10px 0; }
+.kv span { color: #6b7280; font-size: 12px; }
+.kv b { display: block; color: #1f2937; font-size: 13px; overflow-wrap: anywhere; }
+.status { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.passed { background: #dcfce7; color: #166534; }
+.failed { background: #fee2e2; color: #991b1b; }
+.blocked { background: #fef3c7; color: #92400e; }
+.error { background: #f3e8ff; color: #6b21a8; }
+.skipped { background: #e5e7eb; color: #374151; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: #3730a3; font-size: 12px; }
+.button-link { display: inline-block; border: 1px solid #bfdbfe; background: #eff6ff; color: #1d4ed8; border-radius: 8px; padding: 6px 10px; font-size: 13px; }
+details { margin: 8px 0; }
+summary { cursor: pointer; color: #2563eb; }
+pre { white-space: pre-wrap; word-break: break-word; background: #111827; color: #f9fafb; padding: 12px; border-radius: 8px; overflow: auto; max-height: 520px; }
+.ai-grid { display: grid; gap: 8px; }
+.ai-card { border: 1px solid #dbeafe; border-radius: 10px; padding: 12px; background: #f8fbff; }
+.ai-card h4 { margin: 0 0 8px; font-size: 14px; }
+.failure { color: #991b1b; font-weight: 600; }
+.small { color: #6b7280; font-size: 12px; }
+.empty { color: #9ca3af; font-style: italic; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Midscene 测试执行汇总</h1>
+  <p class="small">Run ID: 20260518-181612</p>
+
+  <section class="card">
+    <h2>运行概览</h2>
+    <div class="meta">
+      <span>项目</span><b>世强硬创电商</b>
+      <span>测试计划</span><b>V26R05开发自测冒烟用例</b>
+      <span>Build</span><b>开发自测</b>
+      <span>Keyword</span><b>V26R05-呆滞推动上B台-B台-订单与应收管理</b>
+      <span>导出时间</span><b>2026-05-18T14:22:02</b>
+      <span>开始时间</span><b>2026-05-18T10:16:12.937Z</b>
+      <span>结束时间</span><b>2026-05-18T10:16:12.943Z</b>
+      <span>总耗时</span><b>6ms</b>
+      <span>执行模式</span><b>dry-run</b>
+      <span>安全模式</span><b>开启</b>
+      <span>Midscene 报告</span><b><span class="small">无</span></b>
+      <span>模型配置</span><b>MIDSCENE_MODEL_NAME=gpt-5.4, MIDSCENE_MODEL_BASE_URL=https://icu.091238.xyz/v1, MIDSCENE_MODEL_FAMILY=gpt-5</b>
+    </div>
+  </section>
+
+  <h2>统计</h2>
+  <section class="grid">
+    <div class="stat"><span>总用例</span><b>1</b></div>
+    <div class="stat"><span>总步骤</span><b>7</b></div>
+    <div class="stat"><span>Passed</span><b>0</b></div>
+    <div class="stat"><span>Failed</span><b>0</b></div>
+    <div class="stat"><span>Blocked</span><b>0</b></div>
+    <div class="stat"><span>Error</span><b>0</b></div>
+    <div class="stat"><span>Skipped</span><b>1</b></div>
+    <div class="stat"><span>Pass Rate</span><b>0%</b></div>
+  </section>
+
+  <h2>失败原因摘要</h2>
+  <section class="card">
+    <details open>
+    <summary><b>dry-run-skipped</b> (8)</summary>
+    <ul>
+      <li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        
+        <div>dry-run 模式不会真实执行用例。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+<li>
+        <b>SQ-81350</b> 订单详情页：客户联系人区域
+        <span class="small">step 1</span>
+        <div>dry-run：未执行，仅生成解析、细化和报告结果。</div>
+        
+      </li>
+    </ul>
+  </details>
+  </section>
+
+  <h2>用例明细</h2>
+  <section class="case-list">
+    <article class="case-card">
+    <div class="case-header">
+      <div>
+        <div class="case-title">
+          <span class="tag">#1</span>
+          <h3>SQ-81350 订单详情页：客户联系人区域</h3>
+          <span class="status skipped">skipped</span>
+        </div>
+        <div class="small">Suite: 453440 · medium</div>
+      </div>
+      <div class="case-actions">
+        <span class="small">无</span>
+      </div>
+    </div>
+    <div class="kv">
+      <div><span>原始/细化步骤</span><b>1 / 7</b></div>
+      <div><span>耗时</span><b>0ms</b></div>
+      <div><span>失败步骤</span><b>无</b></div>
+      <div><span>失败类型</span><b>dry-run-skipped</b></div>
+    </div>
+    <div>
+    <div class="failure">dry-run-skipped</div>
+    <div>dry-run 模式不会真实执行用例。</div>
+    
+    
+  </div>
+    <details><summary>前置条件/数据要求</summary><pre>可能需要业务测试数据或权限：团队</pre></details>
+    <details><summary>原始步骤</summary><pre>步骤 1
+动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details open><summary>执行步骤与 AI 详情</summary><div class="step-list"><section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>1. record</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>用例 SQ-81350：订单详情页：客户联系人区域
+原始步骤 1
+动作：检查字段、以及字段内容
+原始预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）
+静态预期：从上至下，从左至右：
+1.客户
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队
+已拆分交互属性：客户（不可复制）；订单团队（可查看在职人员）</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>2. act</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>你正在通过 Midscene Bridge 执行 UI 测试。
+请基于当前已打开且已登录的页面执行。
+用例：SQ-81350 订单详情页：客户联系人区域
+请执行步骤 1：检查字段、以及字段内容
+执行后应便于验证以下静态预期：从上至下，从左至右：
+1.客户
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队
+不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>3. assert</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>请根据当前页面状态判断测试预期是否成立。
+用例：SQ-81350 订单详情页：客户联系人区域
+步骤 1 的原始动作：检查字段、以及字段内容
+这是静态展示断言：只验证字段文案、字段顺序、布局关系和当前已经展示的内容。不要把复制、点击、跳转、下拉、展开、弹窗等交互属性作为本断言的失败原因。
+必须满足的静态预期：从上至下，从左至右：
+1.客户
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队
+以下交互属性已拆分为后续独立 act/assert 步骤：客户（不可复制）；订单团队（可查看在职人员）
+如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>4. act</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>【交互属性验证 - act】请执行一个不改变业务数据的交互验证动作。
+请基于当前已打开且已登录的页面执行。
+用例：SQ-81350 订单详情页：客户联系人区域
+来源：步骤 1 预期中的「1.客户（不可复制）」
+验证对象：客户
+交互属性：不可复制
+请定位「客户」，尝试通过安全方式选中文本并复制该字段内容，观察是否无法复制或页面是否明确体现不可复制。
+不要提交、保存、删除、关闭、取消、确认或修改业务数据；如果验证会触发这类破坏性操作，请停止并说明原因。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>5. assert</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>【交互属性验证 - assert】请根据刚才的交互结果判断该交互属性是否成立。
+用例：SQ-81350 订单详情页：客户联系人区域
+来源：步骤 1 预期中的「1.客户（不可复制）」
+验证对象：客户
+必须满足的交互属性：不可复制
+确认「客户」不可复制：复制不到有效字段内容，或页面存在明确禁用复制/不可复制表现。
+如果页面缺少目标入口、必要数据或权限，请明确判定为不满足并说明缺失项。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>6. act</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>【交互属性验证 - act】请执行一个不改变业务数据的交互验证动作。
+请基于当前已打开且已登录的页面执行。
+用例：SQ-81350 订单详情页：客户联系人区域
+来源：步骤 1 预期中的「5.订单团队（可查看在职人员）」
+验证对象：订单团队
+交互属性：可查看在职人员
+请定位「订单团队」，点击、悬停或打开对应入口，尝试查看「在职人员」相关信息。
+不要提交、保存、删除、关闭、取消、确认或修改业务数据；如果验证会触发这类破坏性操作，请停止并说明原因。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section>
+<section class="step-card">
+    <div class="step-head">
+      <div class="step-title">
+        <b>7. assert</b>
+        <span class="status skipped">skipped</span>
+        <span class="small">source step: 1</span>
+      </div>
+      <span class="small">0ms</span>
+    </div>
+    
+    <p class="failure">dry-run-skipped：dry-run：未执行，仅生成解析、细化和报告结果。</p>
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>【交互属性验证 - assert】请根据刚才的交互结果判断该交互属性是否成立。
+用例：SQ-81350 订单详情页：客户联系人区域
+来源：步骤 1 预期中的「5.订单团队（可查看在职人员）」
+验证对象：订单团队
+必须满足的交互属性：可查看在职人员
+确认通过「订单团队」可以查看「在职人员」相关信息，例如信息区、人员列表、详情浮层或可查看状态。
+如果页面缺少目标入口、必要数据或权限，请明确判定为不满足并说明缺失项。</pre></details>
+    <details><summary>AI 详情</summary><p class="empty">该步骤没有捕获到 AI 响应。</p></details>
+    
+    
+  </section></div></details>
+    
+  </article>
+  </section>
+</main>
+</body>
+</html>

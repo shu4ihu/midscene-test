@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "Skill(trellis-brainstorm)",
+      "Skill(trellis-check)"
+    ]
+  }
+}

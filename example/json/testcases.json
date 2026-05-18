@@ -1,0 +1,924 @@
+{
+  "project": {
+    "name": "世强硬创电商",
+    "prefix": "SQ",
+    "id": "58930"
+  },
+  "filters": {
+    "test_plan": "V26R05开发自测冒烟用例",
+    "build": "开发自测",
+    "keyword": "V26R05-呆滞推动上B台-B台-订单与应收管理"
+  },
+  "export_time": "2026-05-18T14:22:02",
+  "total_cases": 22,
+  "test_suites": [
+    {
+      "suite_path": "",
+      "suite_id": "453440",
+      "test_cases": [
+        {
+          "external_id": "SQ-81350",
+          "name": "订单详情页：客户联系人区域",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>检查字段、以及字段内容</p>\n",
+              "expected_results": "<p>从上至下，从左至右：</p>\n\n<p>1.客户（不可复制）</p>\n\n<p>2.订单联系人</p>\n\n<p>3.签订日期</p>\n\n<p>4.订单签署单号</p>\n\n<p>5.订单团队（可查看在职人员）</p>\n\n<p>&nbsp;</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "ching_xu",
+          "creation_ts": "2021-11-10 11:38:48",
+          "modification_ts": "2026-04-27 10:55:16",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "316305",
+      "test_cases": [
+        {
+          "external_id": "SQ-92963",
+          "name": "订单签署单号跳转",
+          "version": "1",
+          "summary": "",
+          "preconditions": "<p>订单已关联订单签署单号</p>\n",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>点击订单签署_单号</p>\n",
+              "expected_results": "<p>成功跳转订单签署单号详情页面（<span style=\"color:#e74c3c\">权限限制？</span>）</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "hailey_ye",
+          "creation_ts": "2022-06-22 10:43:17",
+          "modification_ts": "2026-04-27 10:54:21",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-148335",
+          "name": "订单信息页面检查",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>页面检查</p>\n",
+              "expected_results": "<p>输入框（默认提示：订单号、客户名称、型号、品牌、卖方名称）搜索按钮&nbsp; &nbsp; 汇总调整</p>\n\n<p>签订日期：，客户：，&nbsp; 销售订单_单号：， 卖方：， 类型：，</p>\n\n<p>状态：， 订单金额：， 付款条件：， 合同经办人： ， 卖方销售：, 订单签署_单号：xxxx(有则显示）</p>\n\n<p>展开框 行号 型号 品牌 数量 单价 金额 状态 RD PD 供应匹配</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>物料复制功能</p>\n",
+              "expected_results": "<p>可支持</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "ziqian_xing",
+          "creation_ts": "2023-09-25 14:01:38",
+          "modification_ts": "2026-04-27 10:49:05",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "504966",
+      "test_cases": [
+        {
+          "external_id": "SQ-93016",
+          "name": "筛选项”问题标记“检查",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>问题标记下拉框展示</p>\n",
+              "expected_results": "<p>默认为空，搜索全部</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>问题标记下拉框选项</p>\n",
+              "expected_results": "<p>逾期SO、取消SO、退货SO、定损SO、问题关闭、呆滞推动、空值</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>选择任一【逾期SO、取消SO、退货SO、定损SO、问题关闭、呆滞推动、空值】意见，点击筛选</p>\n",
+              "expected_results": "<p>检索出对应的数据</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "4",
+              "actions": "<p>选择多个【逾期SO、取消SO、退货SO、定损SO、问题关闭、呆滞推动、空值】意见，点击筛选</p>\n",
+              "expected_results": "<p>检索出对应的数据</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "hailey_ye",
+          "creation_ts": "2022-06-22 12:01:38",
+          "modification_ts": "2026-04-28 14:31:29",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "890272",
+      "test_cases": [
+        {
+          "external_id": "SQ-185970",
+          "name": "左上角内容检查",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>左上角内容检查</p>\n",
+              "expected_results": "<p>卖方中文名（12pt大小思源黑体）</p>\n\n<p>英文名（12pt大小思源黑体）</p>\n\n<p>其他（10pt思源黑体）</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "hailey_ye",
+          "creation_ts": "2024-08-06 15:55:00",
+          "modification_ts": "2026-04-27 14:44:21",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "330533",
+      "test_cases": [
+        {
+          "external_id": "SQ-204623",
+          "name": "字段“问题标记”",
+          "version": "1",
+          "summary": "",
+          "preconditions": "<p>满足ABC三类+订单类型排除小量快购和样品</p>\n",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>检查&ldquo;问题标记&rdquo;字段</p>\n",
+              "expected_results": "<p>可以为空值、逾期so、定损so、问题关闭、取消SO、退货SO、呆滞推动</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>问题标记为&ldquo;逾期SO&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行为&ldquo;超时天数&gt;60&rdquo; 的等待发运订单行</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>问题标记为&ldquo;定损SO&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行在【问题订单】菜单下&ldquo;造成问题供应&rdquo;字段取值为&ldquo;是&rdquo;</p>\n\n<p>标红</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "4",
+              "actions": "<p>问题标记为&ldquo;问题关闭&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行在【问题订单】菜单下&ldquo;财务处理状态&quot;字段取值为&ldquo;关闭&rdquo;</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "5",
+              "actions": "<p>问题标记为&ldquo;取消SO&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行的取消原因不为空（spprjm.t_order_workbench.cancel_reason）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "6",
+              "actions": "<p>问题标记为&ldquo;退货SO&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行退货原因不为空（spprjm.t_order_workbench.return_reason）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "7",
+              "actions": "<p>问题标志为&ldquo;呆滞推动&rdquo;</p>\n",
+              "expected_results": "<p>说明该订单行的呆滞推动字段为是（）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "8",
+              "actions": "<p>问题标记为&rdquo;空值&ldquo;</p>\n",
+              "expected_results": "<p>说明该订单行不属于上述六种状况</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "sue_su",
+          "creation_ts": "2025-09-16 17:42:46",
+          "modification_ts": "2026-04-27 10:30:20",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-204818",
+          "name": "呆滞推动-子事件呈现样式",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>呆滞推动子事件呈现样式</p>\n",
+              "expected_results": "<p>{时间}&nbsp; 呆滞推动 <span style=\"color:#d35400\">增加/取消&nbsp;</span>意见：{意见}&nbsp; 操作人：{操作人} {状态}</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "sue_su",
+          "creation_ts": "2025-09-18 14:52:37",
+          "modification_ts": "2026-04-27 10:23:19",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "966244",
+      "test_cases": [
+        {
+          "external_id": "SQ-204630",
+          "name": "客户取消订单（取消订单）",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>检查客户取消订单行数据</p>\n",
+              "expected_results": "<p>业务描述：&nbsp;已取消的、因客户原因取消的订单。</p>\n\n<p>超时天数：为空</p>\n\n<p>具体细节如下：</p>\n\n<p>OU（卖方）：必须属于之一：世强先进(深圳)科技股份有限公司、世强控股有限公司、世强先进(成都)科技有限公司、深圳市世强元件网络有限公司</p>\n\n<p>订单类型：排除（不包含） 以下任意关键词：内部, 进口, 出口, 预留</p>\n\n<p>（例如：若订单类型为&ldquo;内部调拨&rdquo;，则应被排除）</p>\n\n<p>行类型：必须包含关键词&ldquo;订单行&rdquo;</p>\n\n<p>取消原因：必须等于&ldquo;客户取消订单&rdquo;（指因为客户需求的减少带来的取消，取消订单）</p>\n\n<p>行状态：必须等于&ldquo;已取消&rdquo;</p>\n\n<p>其他条件：必须满足 问题标记不包含&ldquo;问题关闭&rdquo;</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>增量取消订单</p>\n",
+              "expected_results": "<p>取消时间在2025-07-18之后则流入</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2025-09-17 15:13:00",
+          "modification_ts": "2026-04-27 10:34:16",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-204631",
+          "name": "客户退货订单(退货SO）",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>检查客户发起退货，即退货订单行数据</p>\n",
+              "expected_results": "<p>业务描述：&nbsp;已关闭的、因客户原因发起的退货单。</p>\n\n<p>超时天数：为空</p>\n\n<p>具体细节如下：</p>\n\n<p>OU（卖方）：必须属于之一：世强先进(深圳)科技股份有限公司、世强控股有限公司、世强先进(成都)科技有限公司、深圳市世强元件网络有限公司</p>\n\n<p>订单类型：</p>\n\n<p>排除（不包含） 以下任意关键词：内部, 进口, 出口, 预留</p>\n\n<p>（例如：若订单类型为&ldquo;内部调拨&rdquo;，则应被排除）</p>\n\n<p>行类型：必须包含关键词&ldquo;退&rdquo;</p>\n\n<p>退货原因：必须等于&ldquo;客户取消订单&rdquo;</p>\n\n<p>行状态：必须等于&ldquo;已关闭&rdquo;</p>\n\n<p>其他条件：必须满足 问题标记不包含&ldquo;问题关闭&rdquo;</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>增量退货订单</p>\n",
+              "expected_results": "<p>退货时间在2025-07-18之后则流入</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2025-09-17 15:14:06",
+          "modification_ts": "2026-04-27 10:34:27",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-204632",
+          "name": "超时订单",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>订单为等待发运订单（出货SO）</p>\n",
+              "expected_results": "<p>业务描述：正常的等待发货的销售订单。</p>\n\n<p>超时天数：正常计算取值</p>\n\n<p>具体细节如下：</p>\n\n<p>OU（卖方）：必须属于之一：世强先进(深圳)科技股份有限公司、世强控股有限公司、世强先进(成都)科技有限公司、深圳市世强元件网络有限公司</p>\n\n<p>订单类型：</p>\n\n<p>排除（不包含） 以下任意关键词：内部, 进口, 出口, 预留</p>\n\n<p>（例如：若订单类型为&ldquo;内部调拨&rdquo;，则应被排除）</p>\n\n<p>行类型：必须包含关键词&ldquo;订单行&rdquo;</p>\n\n<p>行状态：必须等于&ldquo;等待发运&rdquo;</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>等待发运订单（出货SO）&amp;超时天数&gt;61(首次初始化）</p>\n",
+              "expected_results": "<p>正常推送流入问题订单</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>等待发运订单（出货SO）&amp;超时天数=61(初始化后每日触发）</p>\n",
+              "expected_results": "<p>正常推送流入问题订单</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2025-09-17 15:14:32",
+          "modification_ts": "2026-04-27 10:34:06",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-221451",
+          "name": "呆滞推动订单",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>在潜在异常中进行呆滞推动的订单</p>\n",
+              "expected_results": "<p>流入问题订单</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:31:44",
+          "modification_ts": "2026-04-27 13:34:16",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "442679",
+      "test_cases": [
+        {
+          "external_id": "SQ-204737",
+          "name": "字段“问题标记”，检查",
+          "version": "1",
+          "summary": "",
+          "preconditions": "<p>满足ABC三类+订单类型排除小量快购和样品</p>\n",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>逾期so</p>\n",
+              "expected_results": "<p>&ldquo;超时天数&gt;60&rdquo; 的等待发运订单行</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>问题so</p>\n",
+              "expected_results": "<p>造成问题供应=是</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>问题关闭</p>\n",
+              "expected_results": "<p>财务处理状态=关闭</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "4",
+              "actions": "<p>取消SO</p>\n",
+              "expected_results": "<p>取消原因不为空（spprjm.t_order_workbench.cancel_reason）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "5",
+              "actions": "<p>退货SO</p>\n",
+              "expected_results": "<p>退货原因不为空（spprjm.t_order_workbench.return_reason）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "6",
+              "actions": "<p>呆滞推动</p>\n",
+              "expected_results": "<p>呆滞推动标志为是</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "7",
+              "actions": "<p>其他</p>\n",
+              "expected_results": "<p>为空</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2025-09-18 10:01:23",
+          "modification_ts": "2026-04-27 10:40:32",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "1037563",
+      "test_cases": [
+        {
+          "external_id": "SQ-204817",
+          "name": "呆滞推动按钮出现条件",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>右键呆滞推动出现条件</p>\n",
+              "expected_results": "<p>订单行问题标志内无【呆滞推动】</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "sue_su",
+          "creation_ts": "2025-09-18 14:51:23",
+          "modification_ts": "2026-04-27 09:56:07",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-221446",
+          "name": "呆滞推动页面校验",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>呆滞推动页面校验</p>\n",
+              "expected_results": "<p>呆滞推动</p>\n\n<p>意见：文本框</p>\n\n<p>&nbsp; &nbsp; 取消&nbsp; &nbsp; 提交</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 09:56:29",
+          "modification_ts": "2026-04-27 09:57:21",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-221447",
+          "name": "呆滞推动按钮校验",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>不填写意见进行提交</p>\n",
+              "expected_results": "<p>无法提交，意见为必填项</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>填写意见进行提交</p>\n",
+              "expected_results": "<p>成功提交，生成呆滞推动子事件</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>点击取消or右上角X</p>\n",
+              "expected_results": "<p>退出呆滞推动页面</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 09:57:51",
+          "modification_ts": "2026-04-27 09:59:07",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "494622",
+      "test_cases": [
+        {
+          "external_id": "SQ-210693",
+          "name": "问题标记字段筛选",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>问题标记下拉框</p>\n",
+              "expected_results": "<p>逾期SO、定损SO、问题关闭、取消SO、退货SO、呆滞推动、空值</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>选择其中一个值进行查询</p>\n",
+              "expected_results": "<p>成功查询</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>选择多个值进行查询</p>\n",
+              "expected_results": "<p>成功查询</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "4",
+              "actions": "<p>不选值进行查询</p>\n",
+              "expected_results": "<p>默认查询全部</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2025-10-16 14:29:12",
+          "modification_ts": "2026-04-28 14:24:46",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "1037573",
+      "test_cases": [
+        {
+          "external_id": "SQ-221448",
+          "name": "取消呆滞推动按钮出现条件",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>右键取消呆滞推动按钮出现条件</p>\n",
+              "expected_results": "<p>问题标志有【呆滞推动】</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:06:47",
+          "modification_ts": "2026-04-27 10:09:20",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-221449",
+          "name": "取消呆滞推动页面校验",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>取消呆滞推动页面</p>\n",
+              "expected_results": "<p>取消呆滞推动</p>\n\n<p>意见：文本框</p>\n\n<p>&nbsp; &nbsp; 取消&nbsp; 提交</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:07:36",
+          "modification_ts": "2026-04-27 10:08:20",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        },
+        {
+          "external_id": "SQ-221450",
+          "name": "取消呆滞推动按钮校验",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>不填写意见进行提交</p>\n",
+              "expected_results": "<p>无法提交，意见为必填</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>填写意见进行提交</p>\n",
+              "expected_results": "<p>成功提交，生成呆滞推动子事件（取消标志）</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>点击取消or 右上角X按钮</p>\n",
+              "expected_results": "<p>退出取消呆滞推动页面</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:09:38",
+          "modification_ts": "2026-04-27 10:23:34",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "330578",
+      "test_cases": [
+        {
+          "external_id": "SQ-221452",
+          "name": "子事件种类",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>问题订单子事件</p>\n",
+              "expected_results": "<p>定损、财务处理、呆滞推动</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:43:02",
+          "modification_ts": "2026-04-27 10:43:48",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "965215",
+      "test_cases": [
+        {
+          "external_id": "SQ-221455",
+          "name": "订单行明细查看权限",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>加入客户A的客户团队</p>\n",
+              "expected_results": "<p>可以查看客户A的订单行明细</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>下属加入客户A的客户团队</p>\n",
+              "expected_results": "<p>可以查看下属加入的客户A的订单行明细</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>本身以及下属未加入客户A的客户团队</p>\n",
+              "expected_results": "<p>无法查看客户A的订单行明细</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 10:58:55",
+          "modification_ts": "2026-04-27 11:07:02",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    },
+    {
+      "suite_path": "",
+      "suite_id": "848075",
+      "test_cases": [
+        {
+          "external_id": "SQ-221458",
+          "name": "提交审核状态，检查关闭按钮",
+          "version": "1",
+          "summary": "",
+          "preconditions": "",
+          "importance": "2",
+          "importance_label": "medium",
+          "execution_type": "1",
+          "execution_type_label": "manual",
+          "status": "1",
+          "status_label": "draft",
+          "suite_path": "",
+          "steps": [
+            {
+              "step_number": "1",
+              "actions": "<p>提交审核状态，点击关闭按钮</p>\n",
+              "expected_results": "<p>弹出弹窗：</p>\n\n<p>注意</p>\n\n<p>&nbsp; &nbsp; 流程一单关闭无法重现发起，请确认OA流程是否已经强制归档</p>\n\n<p>&nbsp; &nbsp; 取消&nbsp; &nbsp; 提交</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "2",
+              "actions": "<p>点击提交</p>\n",
+              "expected_results": "<p>操作成功，状态变为 已关闭</p>\n",
+              "execution_type": "1"
+            },
+            {
+              "step_number": "3",
+              "actions": "<p>点击取消</p>\n",
+              "expected_results": "<p>弹窗关闭，状态依旧是提交审核</p>\n",
+              "execution_type": "1"
+            }
+          ],
+          "keywords": [],
+          "custom_fields": {},
+          "author": "everett_wei",
+          "creation_ts": "2026-04-27 11:13:06",
+          "modification_ts": "2026-04-27 11:15:10",
+          "estimated_exec_duration": "",
+          "exec_status": "p"
+        }
+      ]
+    }
+  ]
+}

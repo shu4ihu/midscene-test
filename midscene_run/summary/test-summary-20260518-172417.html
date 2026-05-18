@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midscene 测试执行汇总 20260518-172417</title>
+<style>
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #1f2937; }
+main { max-width: 1280px; margin: 0 auto; padding: 32px 20px 48px; }
+h1 { margin: 0 0 8px; font-size: 28px; }
+h2 { margin-top: 32px; font-size: 20px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.stat { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; }
+.stat b { display: block; font-size: 24px; margin-top: 6px; }
+.meta { display: grid; grid-template-columns: 180px 1fr; gap: 8px 16px; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { border-bottom: 1px solid #e5e7eb; padding: 10px; text-align: left; vertical-align: top; }
+th { background: #f9fafb; font-size: 13px; color: #4b5563; }
+.status { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.passed { background: #dcfce7; color: #166534; }
+.failed { background: #fee2e2; color: #991b1b; }
+.blocked { background: #fef3c7; color: #92400e; }
+.error { background: #f3e8ff; color: #6b21a8; }
+.skipped { background: #e5e7eb; color: #374151; }
+details { margin: 8px 0; }
+summary { cursor: pointer; color: #2563eb; }
+pre { white-space: pre-wrap; word-break: break-word; background: #111827; color: #f9fafb; padding: 12px; border-radius: 8px; overflow: auto; }
+.failure { color: #991b1b; font-weight: 600; }
+.small { color: #6b7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Midscene 测试执行汇总</h1>
+  <p class="small">Run ID: 20260518-172417</p>
+
+  <section class="card">
+    <h2>运行概览</h2>
+    <div class="meta">
+      <span>项目</span><b>世强硬创电商</b>
+      <span>测试计划</span><b>V26R05开发自测冒烟用例</b>
+      <span>Build</span><b>开发自测</b>
+      <span>Keyword</span><b>V26R05-呆滞推动上B台-B台-订单与应收管理</b>
+      <span>导出时间</span><b>2026-05-18T14:22:02</b>
+      <span>开始时间</span><b>2026-05-18T09:24:17.151Z</b>
+      <span>结束时间</span><b>2026-05-18T09:24:31.932Z</b>
+      <span>总耗时</span><b>14.78s</b>
+      <span>执行模式</span><b>current-tab</b>
+      <span>安全模式</span><b>开启</b>
+      <span>Midscene 报告</span><b>E:\midscene-demo\midscene_run\report\testcases-20260518-172417.html</b>
+      <span>模型配置</span><b>MIDSCENE_MODEL_NAME=gpt-5.4, MIDSCENE_MODEL_BASE_URL=https://icu.091238.xyz/v1, MIDSCENE_MODEL_FAMILY=gpt-5</b>
+    </div>
+  </section>
+
+  <h2>统计</h2>
+  <section class="grid">
+    <div class="stat"><span>总用例</span><b>1</b></div>
+    <div class="stat"><span>总步骤</span><b>3</b></div>
+    <div class="stat"><span>Passed</span><b>1</b></div>
+    <div class="stat"><span>Failed</span><b>0</b></div>
+    <div class="stat"><span>Blocked</span><b>0</b></div>
+    <div class="stat"><span>Error</span><b>0</b></div>
+    <div class="stat"><span>Skipped</span><b>0</b></div>
+    <div class="stat"><span>Pass Rate</span><b>100%</b></div>
+  </section>
+
+  <h2>失败原因摘要</h2>
+  <section class="card">
+    <p>无失败、阻塞、错误或跳过记录。</p>
+  </section>
+
+  <h2>用例明细</h2>
+  <section class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>Suite</th><th>External ID</th><th>用例</th><th>状态</th><th>失败摘要</th><th>步骤</th><th>耗时</th><th>详情</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+    <td>1</td>
+    <td>453440</td>
+    <td>SQ-81350</td>
+    <td><b>订单详情页：客户联系人区域</b><div class="small">medium</div></td>
+    <td><span class="status passed">passed</span></td>
+    <td><span class="small">无</span></td>
+    <td>1 / 3</td>
+    <td>13.77s</td>
+    <td>
+      <details><summary>前置条件/数据要求</summary><pre>可能需要业务测试数据或权限：团队</pre></details>
+      <details><summary>原始步骤</summary><pre>步骤 1
+动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+      <details><summary>执行步骤与失败详情</summary><div>
+    <p><b>1. record</b> <span class="status passed">passed</span> <span class="small">source step: 1</span></p>
+    
+    
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>用例 SQ-81350：订单详情页：客户联系人区域
+原始步骤 1
+动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    
+    
+  </div>
+<div>
+    <p><b>2. act</b> <span class="status passed">passed</span> <span class="small">source step: 1</span></p>
+    
+    
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>你正在通过 Midscene Bridge 执行 UI 测试。
+请基于当前已打开且已登录的页面执行。
+用例：SQ-81350 订单详情页：客户联系人区域
+请执行步骤 1：检查字段、以及字段内容
+执行后应便于验证以下预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）
+不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。</pre></details>
+    
+    
+  </div>
+<div>
+    <p><b>3. assert</b> <span class="status passed">passed</span> <span class="small">source step: 1</span></p>
+    
+    
+    <details><summary>原始动作/预期</summary><pre>动作：检查字段、以及字段内容
+预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）</pre></details>
+    <details><summary>细化 prompt</summary><pre>请根据当前页面状态判断测试预期是否成立。
+用例：SQ-81350 订单详情页：客户联系人区域
+步骤 1 的原始动作：检查字段、以及字段内容
+必须满足的预期：从上至下，从左至右：
+1.客户（不可复制）
+2.订单联系人
+3.签订日期
+4.订单签署单号
+5.订单团队（可查看在职人员）
+如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。</pre></details>
+    
+    
+  </div></details>
+      
+    </td>
+  </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>

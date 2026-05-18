@@ -1,0 +1,14 @@
+[2026-05-18T18:05:09.315+08:00] will prepend locate param for field action.type=Tap param={"prompt":"顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”","bbox":[587,121,704,151]} locatePlan={"type":"Locate","param":{"prompt":"顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”","bbox":[587,121,704,151]},"thought":""} hasBbox=true
+[2026-05-18T18:05:09.319+08:00] executing action Tap {
+  locate: {
+    rect: { left: 587, top: 121, width: 118, height: 31 },
+    center: [ 645, 136 ],
+    description: '顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”'
+  }
+} taskContext.element.center: 645,136
+[2026-05-18T18:05:09.319+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-05-18T18:05:09.625+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-05-18T18:05:09.626+08:00] calling action Tap
+[2026-05-18T18:05:14.661+08:00] called action Tap result: undefined
+[2026-05-18T18:05:14.969+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-05-18T18:05:14.969+08:00] called "afterInvokeAction" for interface with action name Tap

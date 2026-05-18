@@ -1,0 +1,3 @@
+{"file":".trellis/spec/frontend/quality-guidelines.md","reason":"Check generated runner/report code for correctness, maintainability, and validation coverage."}
+{"file":".trellis/spec/guides/code-reuse-thinking-guide.md","reason":"Verify implementation stays generic and reuses existing Midscene Bridge patterns rather than coupling to one business JSON."}
+{"file":".trellis/spec/frontend/type-safety.md","reason":"Check structured result fields are consistently populated and safe for JSON/HTML reporting."}

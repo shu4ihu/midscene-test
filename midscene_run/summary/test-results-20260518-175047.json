@@ -1,0 +1,133 @@
+{
+  "runId": "20260518-175047",
+  "mode": "current-tab",
+  "safeMode": true,
+  "startedAt": "2026-05-18T09:50:47.731Z",
+  "endedAt": "2026-05-18T09:51:01.517Z",
+  "durationMs": 13786,
+  "metadata": {
+    "project": {
+      "name": "世强硬创电商",
+      "prefix": "SQ",
+      "id": "58930"
+    },
+    "filters": {
+      "test_plan": "V26R05开发自测冒烟用例",
+      "build": "开发自测",
+      "keyword": "V26R05-呆滞推动上B台-B台-订单与应收管理"
+    },
+    "exportTime": "2026-05-18T14:22:02",
+    "totalCases": 22,
+    "sourceFile": "E:\\midscene-demo\\example\\json\\testcases.json"
+  },
+  "source": {
+    "testcasePath": "E:\\midscene-demo\\example\\json\\testcases.json",
+    "totalCases": 22,
+    "selectedCases": 1
+  },
+  "options": {
+    "dryRun": false,
+    "currentTab": true,
+    "url": "",
+    "caseId": "",
+    "limit": 1,
+    "source": "example/json/testcases.json",
+    "reportDir": "",
+    "allowDestructive": false,
+    "closeNewTabs": false,
+    "forceSameTabNavigation": true,
+    "baseContext": ""
+  },
+  "modelSummary": {
+    "MIDSCENE_MODEL_NAME": "gpt-5.4",
+    "MIDSCENE_MODEL_BASE_URL": "https://icu.091238.xyz/v1",
+    "MIDSCENE_MODEL_FAMILY": "gpt-5"
+  },
+  "midsceneReportFile": "E:\\midscene-demo\\midscene_run\\report\\testcases-20260518-175047.html",
+  "results": [
+    {
+      "externalId": "SQ-81350",
+      "name": "订单详情页：客户联系人区域",
+      "suiteId": "453440",
+      "suitePath": "",
+      "importanceLabel": "medium",
+      "status": "failed",
+      "durationMs": 12704,
+      "rawStepCount": 1,
+      "refinedStepCount": 3,
+      "missingPreconditions": [
+        "可能需要业务测试数据或权限：团队"
+      ],
+      "failureType": "script-error",
+      "failureReason": "步骤执行异常，请查看错误 message 和 stack。",
+      "failedStepNumber": "1",
+      "failedAction": "检查字段、以及字段内容",
+      "failedExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+      "errorName": "Error",
+      "errorMessage": "Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)",
+      "errorStack": "Error: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:36:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+      "error": {
+        "name": "Error",
+        "message": "Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)",
+        "stack": "Error: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:36:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+      },
+      "steps": [
+        {
+          "type": "record",
+          "sourceStepNumber": "1",
+          "prompt": "用例 SQ-81350：订单详情页：客户联系人区域\n原始步骤 1\n动作：检查字段、以及字段内容\n预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "expected": "",
+          "destructive": false,
+          "status": "passed",
+          "durationMs": 100,
+          "rawAction": "检查字段、以及字段内容",
+          "rawExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "aiDetails": [],
+          "failureType": "",
+          "failureReason": "",
+          "failedStepNumber": "",
+          "failedAction": "",
+          "failedExpected": "",
+          "errorName": "",
+          "errorMessage": "",
+          "errorStack": "",
+          "error": null
+        },
+        {
+          "type": "act",
+          "sourceStepNumber": "1",
+          "prompt": "你正在通过 Midscene Bridge 执行 UI 测试。\n请基于当前已打开且已登录的页面执行。\n用例：SQ-81350 订单详情页：客户联系人区域\n请执行步骤 1：检查字段、以及字段内容\n执行后应便于验证以下预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。",
+          "expected": "",
+          "destructive": false,
+          "status": "failed",
+          "durationMs": 11929,
+          "rawAction": "检查字段、以及字段内容",
+          "rawExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "aiDetails": [],
+          "failureType": "script-error",
+          "failureReason": "步骤执行异常，请查看错误 message 和 stack。",
+          "failedStepNumber": "1",
+          "failedAction": "检查字段、以及字段内容",
+          "failedExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "errorName": "Error",
+          "errorMessage": "Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)",
+          "errorStack": "Error: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:36:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+          "error": {
+            "name": "Error",
+            "message": "Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)",
+            "stack": "Error: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\nError: Task failed: 当前页面不是订单详情页客户联系人区域，截图中未看到“客户、订单联系人、签订日期、订单签署单号、订单团队”等必要字段，无法执行该检查步骤。请先打开对应的订单详情页并展示客户联系人区域后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:162:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:90:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:36:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+          }
+        }
+      ],
+      "rawSteps": [
+        {
+          "stepNumber": "1",
+          "actionText": "检查字段、以及字段内容",
+          "expectedText": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "executionType": "1"
+        }
+      ],
+      "preconditionsText": ""
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "runId": "20260518-180442",
+  "mode": "current-tab",
+  "safeMode": true,
+  "startedAt": "2026-05-18T10:04:42.195Z",
+  "endedAt": "2026-05-18T10:05:22.335Z",
+  "durationMs": 40140,
+  "metadata": {
+    "project": {
+      "name": "世强硬创电商",
+      "prefix": "SQ",
+      "id": "58930"
+    },
+    "filters": {
+      "test_plan": "V26R05开发自测冒烟用例",
+      "build": "开发自测",
+      "keyword": "V26R05-呆滞推动上B台-B台-订单与应收管理"
+    },
+    "exportTime": "2026-05-18T14:22:02",
+    "totalCases": 22,
+    "sourceFile": "E:\\midscene-demo\\example\\json\\testcases.json"
+  },
+  "source": {
+    "testcasePath": "E:\\midscene-demo\\example\\json\\testcases.json",
+    "totalCases": 22,
+    "selectedCases": 2
+  },
+  "options": {
+    "dryRun": false,
+    "currentTab": true,
+    "url": "",
+    "caseId": "",
+    "limit": 2,
+    "source": "example/json/testcases.json",
+    "reportDir": "",
+    "allowDestructive": false,
+    "closeNewTabs": false,
+    "forceSameTabNavigation": true,
+    "baseContext": ""
+  },
+  "modelSummary": {
+    "MIDSCENE_MODEL_NAME": "gpt-5.4",
+    "MIDSCENE_MODEL_BASE_URL": "https://icu.091238.xyz/v1",
+    "MIDSCENE_MODEL_FAMILY": "gpt-5"
+  },
+  "midsceneReportFile": "E:\\midscene-demo\\midscene_run\\report\\testcases-20260518-180442.html",
+  "results": [
+    {
+      "externalId": "SQ-81350",
+      "name": "订单详情页：客户联系人区域",
+      "suiteId": "453440",
+      "suitePath": "",
+      "importanceLabel": "medium",
+      "status": "failed",
+      "durationMs": 17812,
+      "rawStepCount": 1,
+      "refinedStepCount": 3,
+      "missingPreconditions": [
+        "可能需要业务测试数据或权限：团队"
+      ],
+      "failureType": "assertion-failed",
+      "failureReason": "页面状态不满足该步骤的预期断言。",
+      "failedStepNumber": "1",
+      "failedAction": "检查字段、以及字段内容",
+      "failedExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+      "errorName": "Error",
+      "errorMessage": "Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+      "errorStack": "Error: Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。\n    at AgentOverChromeBridge.aiAssert (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:508:23)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:169:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+      "error": {
+        "name": "Error",
+        "message": "Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+        "stack": "Error: Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。\n    at AgentOverChromeBridge.aiAssert (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:508:23)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:169:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+      },
+      "steps": [
+        {
+          "type": "record",
+          "sourceStepNumber": "1",
+          "prompt": "用例 SQ-81350：订单详情页：客户联系人区域\n原始步骤 1\n动作：检查字段、以及字段内容\n预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "expected": "",
+          "destructive": false,
+          "status": "passed",
+          "durationMs": 97,
+          "rawAction": "检查字段、以及字段内容",
+          "rawExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "aiDetails": [],
+          "failureType": "",
+          "failureReason": "",
+          "failedStepNumber": "",
+          "failedAction": "",
+          "failedExpected": "",
+          "errorName": "",
+          "errorMessage": "",
+          "errorStack": "",
+          "error": null
+        },
+        {
+          "type": "act",
+          "sourceStepNumber": "1",
+          "prompt": "你正在通过 Midscene Bridge 执行 UI 测试。\n请基于当前已打开且已登录的页面执行。\n用例：SQ-81350 订单详情页：客户联系人区域\n请执行步骤 1：检查字段、以及字段内容\n执行后应便于验证以下预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。",
+          "expected": "",
+          "destructive": false,
+          "status": "passed",
+          "durationMs": 10295,
+          "rawAction": "检查字段、以及字段内容",
+          "rawExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "aiDetails": [
+            {
+              "id": "58a0e948-f87c-4f93-bb16-7fa9ab61d22f",
+              "type": "Planning",
+              "subType": "Plan",
+              "status": "finished",
+              "prompt": "你正在通过 Midscene Bridge 执行 UI 测试。\n请基于当前已打开且已登录的页面执行。\n用例：SQ-81350 订单详情页：客户联系人区域\n请执行步骤 1：检查字段、以及字段内容\n执行后应便于验证以下预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。",
+              "thought": "当前截图已显示“订单详情页”的客户联系人区域，且相关字段与内容都可见，无需再操作页面。根据截图，从上至下、从左至右可直接核对到：客户、订单联系人、签订日期、订单签署单号、订单团队。用户要求是执行步骤1“检查字段、以及字段内容”，并便于验证预期；现在已具备验证所需信息，因此任务已完成。我应返回观察到的实际字段与内容，并指出“客户（不可复制）”“订单团队（可查看在职人员）”这类交互属性无法仅凭静态截图完全验证。",
+              "output": "已完成步骤1检查。当前页面“客户联系人区域”从上至下、从左至右可见字段及内容为：\n\n1. 客户：宁德时代新能源科技股份有限公司\n2. 订单联系人：黄诗雨\n3. 签订日期：2021-11-10\n4. 订单签署单号：ZSDD202111090442\n5. 订单团队：TSE，CS\n\n说明：\n- 以上字段顺序与预期一致。\n- 仅凭当前静态截图，可确认字段及其展示内容。\n- “客户（不可复制）”与“订单团队（可查看在职人员）”属于交互/权限特性，当前截图无法直接证明，若需验证需继续执行复制或点击查看相关操作。",
+              "rawResponse": "<thought>当前截图已显示“订单详情页”的客户联系人区域，且相关字段与内容都可见，无需再操作页面。根据截图，从上至下、从左至右可直接核对到：客户、订单联系人、签订日期、订单签署单号、订单团队。用户要求是执行步骤1“检查字段、以及字段内容”，并便于验证预期；现在已具备验证所需信息，因此任务已完成。我应返回观察到的实际字段与内容，并指出“客户（不可复制）”“订单团队（可查看在职人员）”这类交互属性无法仅凭静态截图完全验证。</thought>\n<complete success=\"true\">已完成步骤1检查。当前页面“客户联系人区域”从上至下、从左至右可见字段及内容为：\n\n1. 客户：宁德时代新能源科技股份有限公司\n2. 订单联系人：黄诗雨\n3. 签订日期：2021-11-10\n4. 订单签署单号：ZSDD202111090442\n5. 订单团队：TSE，CS\n\n说明：\n- 以上字段顺序与预期一致。\n- 仅凭当前静态截图，可确认字段及其展示内容。\n- “客户（不可复制）”与“订单团队（可查看在职人员）”属于交互/权限特性，当前截图无法直接证明，若需验证需继续执行复制或点击查看相关操作。</complete>",
+              "usage": {
+                "prompt_tokens": 7282,
+                "completion_tokens": 322,
+                "total_tokens": 7604,
+                "cached_input": 5376,
+                "time_cost": 9937,
+                "model_name": "gpt-5.4",
+                "model_description": "gpt-5 mode",
+                "slot": "default",
+                "intent": "planning",
+                "request_id": "de014a99-3b38-4793-b453-6c17ffca3b7e"
+              }
+            }
+          ],
+          "failureType": "",
+          "failureReason": "",
+          "failedStepNumber": "",
+          "failedAction": "",
+          "failedExpected": "",
+          "errorName": "",
+          "errorMessage": "",
+          "errorStack": "",
+          "error": null
+        },
+        {
+          "type": "assert",
+          "sourceStepNumber": "1",
+          "prompt": "请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。",
+          "expected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "destructive": false,
+          "status": "failed",
+          "durationMs": 6727,
+          "rawAction": "检查字段、以及字段内容",
+          "rawExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "aiDetails": [
+            {
+              "id": "a64cce5c-1e1f-47e0-9de2-a8adeff5a326",
+              "type": "Insight",
+              "subType": "Assert",
+              "status": "failed",
+              "prompt": "请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。",
+              "thought": "页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+              "rawResponse": "<thought>页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。</thought>\n<data-json>\n{\n  \"StatementIsTruthy\": false\n}\n</data-json>\n<errors>[\"无法从静态截图验证“客户（不可复制）”这一必要预期；虽字段与内容均存在且顺序正确，但缺少该交互属性的确认数据，因此判定为不满足。\"]</errors>",
+              "usage": {
+                "prompt_tokens": 2123,
+                "completion_tokens": 222,
+                "total_tokens": 2345,
+                "cached_input": 0,
+                "time_cost": 6448,
+                "model_name": "gpt-5.4",
+                "model_description": "gpt-5 mode",
+                "slot": "default",
+                "intent": "insight",
+                "request_id": "d66221c9-333f-4fb0-aa92-c35d962b83e2"
+              },
+              "errorMessage": "Assertion failed: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+              "errorStack": "Error: Assertion failed: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:313:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:139:35)\n    at async TaskExecutor.createTypeQueryExecution (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:328:24)\n    at async AgentOverChromeBridge.aiAssert (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:486:41)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:169:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+            }
+          ],
+          "failureType": "assertion-failed",
+          "failureReason": "页面状态不满足该步骤的预期断言。",
+          "failedStepNumber": "1",
+          "failedAction": "检查字段、以及字段内容",
+          "failedExpected": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "errorName": "Error",
+          "errorMessage": "Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+          "errorStack": "Error: Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。\n    at AgentOverChromeBridge.aiAssert (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:508:23)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:169:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+          "error": {
+            "name": "Error",
+            "message": "Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。",
+            "stack": "Error: Assertion failed: 请根据当前页面状态判断测试预期是否成立。\n用例：SQ-81350 订单详情页：客户联系人区域\n步骤 1 的原始动作：检查字段、以及字段内容\n必须满足的预期：从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）\n如果当前页面缺少必要数据或权限，请明确判定为不满足并说明缺失项。\nReason: 页面为“订单详情页”。顶部客户联系人区域从上至下、从左至右可见：第一行左侧“客户”，右侧“订单联系人”；第二行左侧“签订日期”，中间“订单签署-单号”，右侧“订单团队”。字段顺序与用例要求基本一致，且对应内容均已显示。页面中“订单团队”后展示“TSE，CS”，看起来可点击查看人员；但“客户（不可复制）”这一交互属性仅凭静态截图无法验证，按严格测试预期需要确认。由于缺少对“不可复制”这一必要判定数据，不能认定完全满足。\n    at AgentOverChromeBridge.aiAssert (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:508:23)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:169:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+          }
+        }
+      ],
+      "rawSteps": [
+        {
+          "stepNumber": "1",
+          "actionText": "检查字段、以及字段内容",
+          "expectedText": "从上至下，从左至右：\n1.客户（不可复制）\n2.订单联系人\n3.签订日期\n4.订单签署单号\n5.订单团队（可查看在职人员）",
+          "executionType": "1"
+        }
+      ],
+      "preconditionsText": ""
+    },
+    {
+      "externalId": "SQ-92963",
+      "name": "订单签署单号跳转",
+      "suiteId": "316305",
+      "suitePath": "",
+      "importanceLabel": "medium",
+      "status": "failed",
+      "durationMs": 19582,
+      "rawStepCount": 1,
+      "refinedStepCount": 4,
+      "missingPreconditions": [
+        "需要确认前置条件：订单已关联订单签署单号",
+        "可能需要业务测试数据或权限：已关联",
+        "可能需要业务测试数据或权限：权限"
+      ],
+      "failureType": "script-error",
+      "failureReason": "步骤执行异常，请查看错误 message 和 stack。",
+      "failedStepNumber": "1",
+      "failedAction": "点击订单签署_单号",
+      "failedExpected": "成功跳转订单签署单号详情页面（权限限制？）",
+      "errorName": "Error",
+      "errorMessage": "Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)",
+      "errorStack": "Error: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+      "error": {
+        "name": "Error",
+        "message": "Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)",
+        "stack": "Error: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+      },
+      "steps": [
+        {
+          "type": "manual-note",
+          "sourceStepNumber": "precondition",
+          "prompt": "用例前置条件：订单已关联订单签署单号",
+          "expected": "",
+          "destructive": false,
+          "status": "passed",
+          "durationMs": 120,
+          "rawAction": "",
+          "rawExpected": "",
+          "aiDetails": [],
+          "failureType": "",
+          "failureReason": "",
+          "failedStepNumber": "",
+          "failedAction": "",
+          "failedExpected": "",
+          "errorName": "",
+          "errorMessage": "",
+          "errorStack": "",
+          "error": null
+        },
+        {
+          "type": "record",
+          "sourceStepNumber": "1",
+          "prompt": "用例 SQ-92963：订单签署单号跳转\n前置条件：订单已关联订单签署单号\n原始步骤 1\n动作：点击订单签署_单号\n预期：成功跳转订单签署单号详情页面（权限限制？）",
+          "expected": "",
+          "destructive": false,
+          "status": "passed",
+          "durationMs": 128,
+          "rawAction": "点击订单签署_单号",
+          "rawExpected": "成功跳转订单签署单号详情页面（权限限制？）",
+          "aiDetails": [],
+          "failureType": "",
+          "failureReason": "",
+          "failedStepNumber": "",
+          "failedAction": "",
+          "failedExpected": "",
+          "errorName": "",
+          "errorMessage": "",
+          "errorStack": "",
+          "error": null
+        },
+        {
+          "type": "act",
+          "sourceStepNumber": "1",
+          "prompt": "你正在通过 Midscene Bridge 执行 UI 测试。\n请基于当前已打开且已登录的页面执行。\n用例：SQ-92963 订单签署单号跳转\n前置条件：订单已关联订单签署单号\n请执行步骤 1：点击订单签署_单号\n执行后应便于验证以下预期：成功跳转订单签署单号详情页面（权限限制？）\n不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。",
+          "expected": "",
+          "destructive": false,
+          "status": "failed",
+          "durationMs": 19226,
+          "rawAction": "点击订单签署_单号",
+          "rawExpected": "成功跳转订单签署单号详情页面（权限限制？）",
+          "aiDetails": [
+            {
+              "id": "1746cf67-ff1f-4d2c-b4dc-5de0f8a55207",
+              "type": "Planning",
+              "subType": "Plan",
+              "status": "finished",
+              "prompt": "你正在通过 Midscene Bridge 执行 UI 测试。\n请基于当前已打开且已登录的页面执行。\n用例：SQ-92963 订单签署单号跳转\n前置条件：订单已关联订单签署单号\n请执行步骤 1：点击订单签署_单号\n执行后应便于验证以下预期：成功跳转订单签署单号详情页面（权限限制？）\n不要编造页面上不存在的业务对象、账号、数据编号或测试数据；如果页面缺少必要数据，请停止当前步骤并说明原因。",
+              "thought": "当前页面是“订单详情页”，顶部信息区里已经能看到“订单签署_单号”字段，值为蓝色可点击链接“ZSDD202111090442”。用户这一步只要求点击订单签署_单号，不需要我额外验证跳转结果；页面上也确实存在该单号数据，所以直接点击这个蓝色链接就是下一步。",
+              "output": "{\n  \"actions\": [\n    {\n      \"type\": \"Tap\",\n      \"param\": {\n        \"locate\": {\n          \"rect\": {\n            \"left\": 587,\n            \"top\": 121,\n            \"width\": 118,\n            \"height\": 31\n          },\n          \"center\": [\n            645,\n            136\n          ],\n          \"description\": \"顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”\"\n        }\n      }\n    }\n  ],\n  \"log\": \"看到签署单号了，这就点它\",\n  \"thought\": \"当前页面是“订单详情页”，顶部信息区里已经能看到“订单签署_单号”字段，值为蓝色可点击链接“ZSDD202111090442”。用户这一步只要求点击订单签署_单号，不需要我额外验证跳转结果；页面上也确实存在该单号数据，所以直接点击这个蓝色链接就是下一步。\",\n  \"yamlFlow\": [\n    {\n      \"aiTap\": \"\",\n      \"locate\": \"顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”\"\n    }\n  ],\n  \"shouldContinuePlanning\": true\n}",
+              "rawResponse": "<thought>当前页面是“订单详情页”，顶部信息区里已经能看到“订单签署_单号”字段，值为蓝色可点击链接“ZSDD202111090442”。用户这一步只要求点击订单签署_单号，不需要我额外验证跳转结果；页面上也确实存在该单号数据，所以直接点击这个蓝色链接就是下一步。</thought>\n<log>看到签署单号了，这就点它</log>\n<action-type>Tap</action-type>\n<action-param-json>\n{\n  \"locate\": {\n    \"prompt\": \"顶部信息区中蓝色的订单签署_单号链接“ZSDD202111090442”\",\n    \"bbox\": [587, 121, 704, 151]\n  }\n}\n</action-param-json>",
+              "usage": {
+                "prompt_tokens": 7265,
+                "completion_tokens": 184,
+                "total_tokens": 7449,
+                "cached_input": 5376,
+                "time_cost": 6293,
+                "model_name": "gpt-5.4",
+                "model_description": "gpt-5 mode",
+                "slot": "default",
+                "intent": "planning",
+                "request_id": "f72826e2-a879-4479-9807-935f34831f10"
+              }
+            }
+          ],
+          "failureType": "script-error",
+          "failureReason": "步骤执行异常，请查看错误 message 和 stack。",
+          "failedStepNumber": "1",
+          "failedAction": "点击订单签署_单号",
+          "failedExpected": "成功跳转订单签署单号详情页面（权限限制？）",
+          "errorName": "Error",
+          "errorMessage": "Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)",
+          "errorStack": "Error: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)",
+          "error": {
+            "name": "Error",
+            "message": "Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)",
+            "stack": "Error: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\nError: Task failed: 步骤1“点击订单签署_单号”已执行，但当前页面截图为空白，无法识别是否成功跳转到订单签署单号详情页，也无法判断是否存在权限限制或页面加载异常。由于缺少必要可见数据，当前步骤无法继续验证，请提供清晰页面截图后再继续。\n\n    at assert (file:///E:/midscene-demo/node_modules/@midscene/shared/dist/es/utils.mjs:35:27)\n    at Object.executor (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:194:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:141:35)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at TaskRunner.flush (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/task-runner.mjs:185:29)\n    at async TaskExecutor.runAction (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/tasks.mjs:120:28)\n    at async runAiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:368:46)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/core/dist/es/agent/agent.mjs:387:16)\n    at async AgentOverChromeBridge.aiAct (file:///E:/midscene-demo/node_modules/@midscene/web/dist/es/bridge-mode/agent-cli-side.mjs:106:16)\n    at async executeStep (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:164:5)\n    at async runSingleCase (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:92:7)\n    at async runCasesWithBridge (file:///E:/midscene-demo/scripts/lib/bridge-runner.js:37:20)\n    at async main (file:///E:/midscene-demo/scripts/run-testcases.js:36:26)"
+          }
+        }
+      ],
+      "rawSteps": [
+        {
+          "stepNumber": "1",
+          "actionText": "点击订单签署_单号",
+          "expectedText": "成功跳转订单签署单号详情页面（权限限制？）",
+          "executionType": "1"
+        }
+      ],
+      "preconditionsText": "订单已关联订单签署单号"
+    }
+  ]
+}
